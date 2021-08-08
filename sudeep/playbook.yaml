@@ -1,0 +1,7 @@
+---
+- name: Install apache and nginx
+  hosts: all
+  become_method: sudo
+  become: yes
+  roles:
+    - ansible-new

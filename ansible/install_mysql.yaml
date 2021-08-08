@@ -1,0 +1,11 @@
+---
+- name: Install mysql
+  hosts: web2
+  become_method: sudo 
+  become: yes
+  tasks:
+    - name: Install mysql
+      yum:
+        name: mysql
+        state: present
+

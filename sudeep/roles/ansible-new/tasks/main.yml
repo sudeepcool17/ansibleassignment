@@ -1,0 +1,12 @@
+- name: Install apache
+  when: inventory_hostname in groups['apache']
+  yum:
+    name: httpd
+    state: present
+
+
+- name: Install nginx
+  when: inventory_hostname in groups['nginx']
+  yum:
+    name: nginx
+    state: latest

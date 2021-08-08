@@ -1,0 +1,7 @@
+---
+- name : Install Apache
+  hosts: web1 
+  become_method: sudo
+  become: yes
+  roles:
+    - webapache

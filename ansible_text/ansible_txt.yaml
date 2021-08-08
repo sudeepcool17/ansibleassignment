@@ -1,0 +1,11 @@
+---
+- name: create a text file 
+  hosts: web1
+  become_method: sudo
+  become: yes
+  tasks: 
+    - name: Add a line to a file if the file
+      ansible.builtin.lineinfile:
+        path: /tmp.txt
+        line: “This text has been added by custom script”
+        create: yes

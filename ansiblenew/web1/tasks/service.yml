@@ -1,0 +1,7 @@
+---
+
+- name: Start Apache2
+  become_method: sudo
+  become: yes
+  service: name=httpd state=started
+    

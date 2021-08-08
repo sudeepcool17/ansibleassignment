@@ -1,0 +1,6 @@
+---
+- include: install.yml
+- include: configur.yml
+- include: service.yml
+
+# tasks file for web2

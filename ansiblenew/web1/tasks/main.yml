@@ -1,0 +1,8 @@
+---
+
+- include: install.yml
+- include: configure.yml
+- include: service.yml
+
+
+# tasks file for web1
